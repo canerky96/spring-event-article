@@ -29,7 +29,13 @@ public class ProductService {
     return productRepository.findAll();
   }
 
-  public List<Product> findAllByIdIn(Collection<Long> productIds){
+  public List<Product> findAllByIdIn(Collection<Long> productIds) {
     return productRepository.findAllById(productIds);
+  }
+
+  public Product findById(Long id) {
+    return productRepository
+        .findById(id)
+        .orElseThrow(() -> new RuntimeException("Product not found with given id: " + id));
   }
 }

@@ -2,9 +2,34 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="maven-bilyoner-io" />
+      <option name="name" value="maven-bilyoner-io" />
+      <option name="url" value="https://nexus-st.bilyoner.com/repository/maven-bilyoner-io" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://repo1.maven.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-releases" />
+      <option name="name" value="bilyoner-releases" />
+      <option name="url" value="https://nexus-st.bilyoner.com/repository/maven-releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-milestones" />
+      <option name="name" value="Spring Milestone" />
+      <option name="url" value="https://repo.spring.io/libs-milestone" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-snapshots" />
+      <option name="name" value="bilyoner-snapshots" />
+      <option name="url" value="https://nexus-st.bilyoner.com/repository/maven-snapshots" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -12,9 +37,24 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="achiva-prod" />
+      <option name="name" value="achiva-prod" />
+      <option name="url" value="https://nexus-st.bilyoner.com/repository/archiva-prod" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-libs-release-local" />
+      <option name="name" value="spring-libs-release-local" />
+      <option name="url" value="https://nexus-st.bilyoner.com/repository/maven-spring-libs-release-local" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="achiva-internal" />
+      <option name="name" value="achiva-internal" />
+      <option name="url" value="https://nexus-st.bilyoner.com/repository/archiva-internal" />
     </remote-repository>
   </component>
 </project>
