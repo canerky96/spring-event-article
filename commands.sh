@@ -7,4 +7,4 @@ curl --location --request POST 'http://localhost:8080/basket' --header 'Content-
 curl --location --request POST 'http://localhost:8080/basket/1' --header 'Content-Type: application/json' --data-raw '{"productId": 3}'
 
 curl --location --request POST 'http://localhost:8080/basket/1/confirm'
-
+curl --location --request PATCH 'http://localhost:8080/product/1' --header 'Content-Type: application/json' --data-raw '{"price": 150}'
