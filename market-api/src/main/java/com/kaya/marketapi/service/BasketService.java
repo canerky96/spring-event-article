@@ -3,14 +3,15 @@ package com.kaya.marketapi.service;
 import com.kaya.marketapi.dto.BasketCreateRequestDTO;
 import com.kaya.marketapi.event.BasketConfirmEvent;
 import com.kaya.marketapi.model.Basket;
+import com.kaya.marketapi.model.Product;
 import com.kaya.marketapi.repository.BasketRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.ApplicationEventMulticaster;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -41,7 +42,8 @@ public class BasketService {
 
   public Basket confirm(Long id) {
     var basket = findById(id);
-    applicationEventMulticaster.multicastEvent(new BasketConfirmEvent(this, id, new ArrayList<>()));
+    var productIds = basket.getProducts().stream().map(Product::getId).collect(Collectors.toList());
+    applicationEventMulticaster.multicastEvent(new BasketConfirmEvent(this, id, productIds));
     return basket;
   }
 

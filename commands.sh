@@ -3,6 +3,8 @@ curl --location --request POST 'http://localhost:8080/product' --header 'Content
 curl --location --request POST 'http://localhost:8080/product' --header 'Content-Type: application/json' --data-raw '{"name": "Laptop", "price": 2500.0, "quantity": 200}'
 
 curl --location --request POST 'http://localhost:8080/basket' --header 'Content-Type: application/json' --data-raw '{"productIds": [1,2]}'
+curl --location --request POST 'http://localhost:8080/basket' --header 'Content-Type: application/json' --data-raw '{"productIds": [1,2,3]}'
 curl --location --request POST 'http://localhost:8080/basket/1' --header 'Content-Type: application/json' --data-raw '{"productId": 3}'
 
 curl --location --request POST 'http://localhost:8080/basket/1/confirm'
+

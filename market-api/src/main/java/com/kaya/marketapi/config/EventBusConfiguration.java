@@ -9,6 +9,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 @Configuration
 public class EventBusConfiguration {
 
+  // You can assign thread number for event multicaster
   @Bean(name = "applicationEventMulticaster")
   public ApplicationEventMulticaster simpleApplicationEventMulticaster() {
     SimpleApplicationEventMulticaster eventMulticaster = new SimpleApplicationEventMulticaster();
